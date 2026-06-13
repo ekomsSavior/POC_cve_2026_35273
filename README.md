@@ -1,6 +1,10 @@
 # POC_cve_2026_35273
+
 Universal Unauthenticated RCE via PeopleSoft SSRF
 
+DISCLAIMER:
+
+FOR AUTHORIZED SECURITY TESTING AND EDUCATIONAL PURPOSES ONLY 
 
  Usage Examples :
  ```bash
