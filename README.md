@@ -27,4 +27,4 @@ Credential theft	Steals IAM keys, Azure tokens, or GCP service accounts
 Multiple RCE paths	SSM, RunCommand, web shells, reverse shells
 
 Stealthy C2	Uses cloud APIs, not raw sockets
-``
+```
